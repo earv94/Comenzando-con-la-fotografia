@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+#imginferior {
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+}
+#imginferior div span {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+#imginferior div a {
+	color: #000000;
+}
+#imginferior div span {
+	padding: 15px 0px;
+}
+#paisaje:hover {
+	animation: Rotacion 2s;
+}
+@-webkit-keyframes Rotacion {
+ 0% {
+ transform: rotate(0deg);
+}
+50% {
+ transform: rotate(10deg);
+ box-shadow: 2px 2px 2px #82c3a6;
+}
+100% {
+ transform: rotate(0deg);
+}
+}
+#retratos:hover {
+	animation: transl 2s;
+}
+@-webkit-keyframes transl {
+ 0% {
+ transform: translate(0px, 0px);
+}
+50% {
+ transform: translate(20px, -5px);
+ box-shadow: 2px 2px 2px #82c3a6;
+}
+100% {
+ transform: translate(0px, 0px);
+}
+}
+
+@media (max-width: 900px) {
+.contenido {
+	width: 100%;
+}
+header {
+	min-height: 200px;
+}
+header h1 {
+	width: 100%;
+	text-align: center;
+}
+#navprincipal {
+	width: 100%;
+}
+ul {
+	text-align: center;
+} 
+#central {
+	max-width: 96%;
+	margin: 2%;
+}
+#imgcentral {
+	max-width: 900px;
+	width: 100%;
+	background-color: #82c3a6;
+}
+#imginferior div {
+	max-width: 100%;
+}
+#imginferior div a img {
+	max-width: 90%;
+	border: 1px;
+	margin: 5%;
+}
+}
+
+@media (min-width: 900px) {
+.contenido {
+	width: 900px;
+}
+header {
+	width: 900px;
+	min-height: 80px;
+}
+#imgcentral {
+	min-width: 900px;
+	height: auto;
+	background-color: #82c3a6;
+}
+#central {
+	max-width: 80%;
+	margin: 2% 10%;
+}
+#imginferior div {
+	max-width: 50%;
+}
+#imginferior div a img {
+	max-width: 90%;
+	border: 1px;
+	margin: 5%;
+}
+}

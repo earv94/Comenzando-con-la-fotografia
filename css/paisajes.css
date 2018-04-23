@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+#galeria {
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+}
+.blur{
+   -webkit-filter: blur(10px);
+}
+.gris{
+   -webkit-filter: grayscale(100%);
+}
+.sepia{
+   -webkit-filter: sepia(90%);
+}
+
+@media (max-width: 900px) {
+#galeria {
+	max-width: 900px;
+	width: 100%;
+}
+	#galeria div img{
+		width: 84%;
+		margin: 4% 8%;
+	}
+}
+
+@media (min-width: 900px) {
+#galeria {
+	min-width: 900px;
+	height: auto;
+}
+#galeria div {
+	width: 33.3%;
+}
+#galeria div img {
+	width: 84%;
+	margin: 4% 8%;
+}
+}
